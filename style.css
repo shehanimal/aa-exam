@@ -1,0 +1,290 @@
+@font-face {
+    font-family: Almarai;
+    src: url(font/Almarai/Almarai-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    
+    font-family: Almarai, sans-serif;
+}
+
+/* Navigation */
+
+.nav-container{
+    background: #5C524D;
+    height: 100px;
+    
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav .logo{
+width: 227px;
+height: 40px;
+padding-left: 108px;
+padding-top: 15px;
+}
+
+.nav-items li {
+    list-style: none;
+    padding-right: 37px;
+    padding-top: 46px;
+}
+
+.nav-items li a {
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: Almarai;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+
+/*header*/
+
+.header-container{
+    background: #E5E5E5;
+    height: 98px;
+}
+
+.search-bar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding-left: 109px;
+    top: 24px;
+  }
+  
+  .searchTerm {
+    width: 681px;
+    border-right: none;
+    border: 1px solid #FFF;
+    padding: 5px;
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #000000;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 50px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  i#magnify {
+    color: #FC732F;
+}
+i#calendercheck {
+  color: #FC732F;
+}
+/* Main */
+
+.main-container{
+    background-color: #FFF;
+
+}
+.event-list-wrapper {
+    height: 100%;
+    width: 100%;
+    padding-left: 111px;
+    padding-top: 50px;
+    
+  }
+  .event-list {
+    display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  }
+  .event-box {
+    display: inline-block;
+ 
+    background: #FFFFFF;
+border: 1px solid #D5D5D5;
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+width: 270px;
+
+
+  }
+ 
+  .event-image img{
+    border-radius: 4px 4px 0px 0px;
+    width: 100%;
+height: auto;
+
+  }
+  
+.event-list-title {
+    font-family: Almarai;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.event-title{
+  font-family: Almarai;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 27px;
+text-transform: capitalize;
+color: #212121;
+padding: 14px;
+text-align: left;
+}
+.event-info {
+  display: flex;
+}
+.event-date{
+
+margin: 0px 15px;
+font-size: 14px;
+line-height: 20px;
+text-transform: capitalize;
+}
+.event-seats{
+font-size: 14px;
+line-height: 20px;
+text-transform: capitalize;
+color: #212121;
+text-align: right;
+padding-left: 17px;
+}
+
+.event-booking{
+  background: #FFFFFF;
+border: 1px solid #D5D5D5;
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+text-align: center;
+font-family: Almarai;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 18px;
+text-transform: capitalize;
+color: #FC732F;
+}
+.dropdownicon {
+  display: none;
+}
+@media only screen and (max-width: 425px) {
+  .dropdownicon {
+    display: block;
+    height: 1px;
+    width: 55px;
+  }
+  body {
+    width: min-content;
+  }
+  .header-container {
+    
+    width: 425px;
+}
+  
+  .nav-container {
+     width: 425px;
+}
+
+nav .logo {
+  padding-left: 5px;
+}
+
+.logo img {
+  width: 207px;
+  height: 38px;
+}
+
+.search-bar {
+  width: 90%;
+  padding-left: 89px;
+  
+}
+  .mobile-container {
+    display: block;
+  }
+  
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  nav ul{
+    display: none;
+}
+ 
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+}

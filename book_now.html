@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE Examination</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body style="background-color: #E5E5E5;"></body>
+
+
+
+<main>
+<div class="form-page">
+    <div class="bookigform">
+       <div class="head-banner"></div>
+<div class="booked-event"><h2>RGD Design Thinkers</h2></div>
+<div class="booked-date">21 Sep, 2020</div>
+<div class="availableseats">Tickets Available: 11</div>
+</div>
+<form name="bookingform" method="post" action="" onsubmit="return validateForm()">
+
+   <div class="">
+      <label for="Name">Name</label>
+      <input type="text" name="clientname"  id="inputfullname" placeholder="First name Last Name">
+   </div>
+   <div class="">
+      <label for="Email">Email</label>
+      <input type="text" name="clientemail"  id="inputfullname" placeholder="username@domain.com">
+   </div>
+   <div class="">
+      <label for="Mobile">Mobile</label>
+      <input type="text" name="clientemail"  id="inputfullname" placeholder="+91 XXX XXX XXXX">
+   </div>
+   <div class="">
+      <label for="Attendees">Attendees</label>
+      
+      
+      <input type="text" name="attendees"  id="inputattendees">
+      <input type="text" name="attendees[]"  id="inputattendees">
+      <div id="newRow"></div>
+      <button id="addRow" type="button" class="btn btn-info">Add an Attendee</button>
+ </div>
+
+ <input type="submit" name="submit" value="Submit">
+ <input type="submit" name="delete_button" value="Delete" />
+
+</form>
+
+    </div>
+</div>
+</main>
+<script type="text/javascript">
+   // add row
+   $("#addRow").click(function () {
+       var html = '';
+       html += '<input type="text" name="attendees[]"  id="inputattendees">';
+
+       $('#newRow').append(html);
+   });
+
+   // remove row
+   $(document).on('click', '#removeRow', function () {
+       $(this).closest('#inputFormRow').remove();
+   });
+</script>
+<script>
+   function validateForm() {
+  let x = document.forms["bookingform"]["clientname"].value;
+  if (x == "") {
+    alert("Please enter your name");
+    return false;
+  }
+
+  var regEx = /^[a-z][a-z\s]*$/;
+   if(clientname.value.match(regEx))
+     {
+      return true;
+     }
+   else
+     {
+     alert("Only letters and spaces are allowed.");
+     return false;
+     }
+}
+function lettersAndSpaceCheck(clientname)
+{
+   var regEx = /^[a-z][a-z\s]*$/;
+   if(clientname.value.match(regEx))
+     {
+      return true;
+     }
+   else
+     {
+     alert("Only letters and spaces are allowed.");
+     return false;
+     }
+}    
+</script>
+
+</script>
+
+ <script src="main.js" ></script>  
+</body>
+</html>  
