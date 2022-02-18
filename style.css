@@ -14,7 +14,10 @@ body{
     
     font-family: Almarai, sans-serif;
 }
+a {
+  text-decoration: none;
 
+}
 /* Navigation */
 
 .nav-container{
@@ -212,6 +215,25 @@ text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.event-soldout{
+  background: #FFFFFF;
+  border: 3px solid #757575;
+  box-shadow: 0px 2px 2px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  text-align: center;
+  font-family: Almarai;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #757575;
+  margin: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .dropdownicon {
   display: none;
 }
@@ -219,6 +241,8 @@ text-align: left;
 {
   display: none;
 }
+
+
 /*bookig form page */
 div.form-set {
   margin: 20px 0;

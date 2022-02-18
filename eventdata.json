@@ -1,0 +1,58 @@
+[
+ {
+   "event_id": "e001",
+   "event_img": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-1.png",
+   "event_name": "Understanding color theory:",
+   "event_date": "21 Sep, 2021",
+   "tickets_availbility": 0
+ },
+ {
+   "event_id": "e002",
+   "event_img": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-2.png",
+   "event_name": "RGD Design Thinkers",
+   "event_date": "21 Sep, 2021",
+   "tickets_availbility": 11
+ },
+ {
+   "event_id": "e003",
+   "event_img": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-3.png",
+   "event_name": "What Design Can Do",
+   "event_date": "22 Sep, 2021",
+   "tickets_availbility": 207
+ },
+ {
+   "event_id": "e004",
+   "event_img": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-4.png",
+   "event_name": "Perth UX Camp",
+   "event_date": "23 Sep, 2021",
+   "tickets_availbility": 46
+ },
+ {
+   "event_id": "e005",
+   "event_img": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-5.png",
+   "event_name": "Sofia Design",
+   "event_date": "24 Sep, 2021",
+   "tickets_availbility": 66
+ },
+ {
+   "event_id": "e006",
+   "event_img": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-6.png",
+   "event_name": "Design Indaba Conference",
+   "event_date": "25 Sep, 2021",
+   "tickets_availbility": 84
+ },
+ {
+   "event_id": "e007",
+   "event_img": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-7.png",
+   "event_name": "TYPO Berlin",
+   "event_date": "26 Sep, 2021",
+   "tickets_availbility": 4
+ },
+ {
+   "event_id": "e008",
+   "event_img": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-8.png",
+   "event_name": "AIGA Design Conference",
+   "event_date": "27 Sep, 2021",
+   "tickets_availbility": 16
+ }
+]

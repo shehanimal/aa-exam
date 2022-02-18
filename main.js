@@ -1,3 +1,61 @@
+
+	$.getJSON("eventdata.json", function(dataJSON) {
+    var listItemString = $('#listItem').html();
+  var dataObject = dataJSON;
+  dataObject.forEach(buildNewList);
+  
+  function buildNewList(item, index) {
+  
+    var html = "";
+    var topic = "";
+      //var queryString = Object.keys(item).map(key => key + '=' + item[key]).join('&');
+    var queryString = Object.keys(item).map((key) => {
+      return encodeURIComponent(key) + '=' + encodeURIComponent(item[key])
+  }).join('&');
+    console.log(queryString);
+        /*html += "<div class='event'>";*/
+        html += "<div class='event-box'>";
+        html += "<div class='event-image'>";
+        html += "<img src='" + item.event_img + "' >";
+        html += "</div>";
+        html += "<div class='event-second'>";
+        html += "<div class='event-title'>";
+        html += "<p>" + item.event_name + "</p>";
+        html += "</div>";
+
+        html += "<div class='event-info'>";
+        html += "<div class='event-date'>" + item.event_date + "</div>";
+;
+      
+      if (item.tickets_availbility > 0) {
+        html += "<div class='event-seats'>Tickets Available: <p class='color-red'>" + item.tickets_availbility + "</p></div>";
+        html += "</div>";
+        html += "<a href='book_now.html?event=" + queryString +"'>";
+        html += "<div class='event-booking'><i class='fa fa-calendar-check-o' aria-hidden='true'></i> book event</div>";
+        html += "</div>";
+        html += "</a>";
+        html += "</div>";
+       /* html += "<div class='mob-icon'><i class='fa fa-calendar-check-o' aria-hidden='true'></i>"
+      html += "</div>";
+      html += "</div>";*/
+      } else {
+        html += "<div class='event-seats'>Tickets Available: <p class='color-red'>N/A</p></div>";
+        html += "</div>";
+        html += "<div class='event-soldout'><i class='fa fa-calendar-times'></i> SOLD OUT</div>";
+        html += "</div>";
+        html += "</div>";
+       /* html += "<div class='mob-icon'><i class='fa fa-calendar-times' aria-hidden='true'></i>"
+      html += "</div>";
+      html += "</div>";*/
+        }
+        
+  $('#event_list').append(html);
+      //doc.getElementById(item).innerHTML = html;
+  
+  }
+  });
+
+
 function myFunction() {
     var x = document.getElementById("resposivnav");
     if (x.style.display === "block") {
