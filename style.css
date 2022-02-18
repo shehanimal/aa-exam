@@ -215,7 +215,10 @@ text-align: left;
 .dropdownicon {
   display: none;
 }
-
+.mob-icon
+{
+  display: none;
+}
 /*bookig form page */
 div.form-set {
   margin: 20px 0;
@@ -224,7 +227,7 @@ div.form-set {
 div.form-set.inlined {
   width: 49%;
   display: inline-block;
-  float: left;
+  /*float: left;*/
   margin-left: 1%;
 }
 
