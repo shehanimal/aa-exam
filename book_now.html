@@ -17,7 +17,7 @@
 <main>
 <div class="form-page">
     <div class="bookigform">
-       <div class="head-banner"></div>
+       <div class="head-banner">
 <div class="booked-event"><h2>RGD Design Thinkers</h2></div>
 <div class="booked-date">21 Sep, 2020</div>
 <div class="availableseats">Tickets Available: 11</div>
@@ -76,9 +76,11 @@
     return false;
   }
 
-  var regEx = /^[a-z][a-z\s]*$/;
-   if(clientname.value.match(regEx))
-     {
+
+  var term = document.forms["bookingform"]["clientname"].value;
+var re = new RegExp("/^[a-z][a-z\s]*$/");
+if (re.test(term))
+{
       return true;
      }
    else
@@ -86,6 +88,7 @@
      alert("Only letters and spaces are allowed.");
      return false;
      }
+  
 }
 function lettersAndSpaceCheck(clientname)
 {
